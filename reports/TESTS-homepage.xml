@@ -1,0 +1,18 @@
+<testsuite name="homepage.HomePage" tests="1" errors="0" failures="1" skipped="0" time="0.0" timestamp="2021-12-16T14:59:28.377153" hostname="DESKTOP-2PVNOR1"><testcase classname="homepage.HomePage" name="visit Armut and get a job" status="failed" time="0"><failure type="NoneType" message="None">
+<![CDATA[
+Failing step: Given visit Armut ... undefined in 0.000s
+Location: features/homepage.feature:4
+None]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: visit Armut and get a job
+    Given visit Armut ... undefined in 0.000s
+    Then verify logo ... undefined in 0.000s
+    Then click on Kariyer ... undefined in 0.000s
+    Then you found your QA Engineer ... undefined in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

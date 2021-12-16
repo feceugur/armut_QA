@@ -1,0 +1,14 @@
+<testsuite name="ToDoApp.Test to add item" tests="1" errors="0" failures="0" skipped="0" time="10.9153" timestamp="2021-12-16T15:06:13.393101" hostname="DESKTOP-2PVNOR1"><testcase classname="ToDoApp.Test to add item" name="Test Advance boy" status="passed" time="10.9153"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Test Advance boy
+    Given I go to 4davanceboy to add item ... passed in 0.534s
+    Then I Click on first checkbox and second checkbox ... passed in 0.168s
+    When I enter item to add ... passed in 0.119s
+    When I click add button ... passed in 0.054s
+    Then I should verify the added item ... passed in 10.041s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
