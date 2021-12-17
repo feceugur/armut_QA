@@ -29,6 +29,7 @@ def after_all(context):
 """
 from selenium import webdriver
 import os
+import time
 
 
 def before_all(context):
@@ -36,6 +37,17 @@ def before_all(context):
     chrome_options.add_argument("--disable-notifications")
     context.browser = webdriver.Chrome(os.getcwd() + "/chromedriver",
                                        chrome_options=chrome_options)
+
+
+def before_scenario(context, scenario):
+    if 'before_scenario' in scenario.tags:
+        context.execute_steps(
+            context.browser.get('https://armut.com/'),
+            time.sleep(2),
+            '''
+            context.browser.maximize_window(),
+            assert context.browser.find_element_by_xpath("//*[@id='form1']/header/div/a").is_displayed(),
+            ''')
 
 
 def after_all(context):
